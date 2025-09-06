@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+body{
+    color: #a52a2a7a;
+}
+
+ @font-face {
+    font-family: newone;
+    src: url('./RubikMonoOne-Regular.ttf');
+ }
+
+@layer{
+    .text-stroke-1 {
+        -webkit-text-stroke:0.5px rgba(255, 255, 255, 0.884);
+      }
+}

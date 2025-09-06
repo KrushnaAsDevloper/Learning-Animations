@@ -1,0 +1,21 @@
+{
+  "name": "learning-animations",
+  "version": "1.0.0",
+  "description": "Learnign the animations to make UI more better looking",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev" : "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KrushnaAsDevloper/Learning-Animations.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KrushnaAsDevloper/Learning-Animations/issues"
+  },
+  "homepage": "https://github.com/KrushnaAsDevloper/Learning-Animations#readme"
+}
