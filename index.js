@@ -21,17 +21,24 @@ t1.from(".navigation, a", {
 
 // Gsap - Scroll Trigger
 
-gsap.from("#page1 #box", {
-    duration:2,
-    rotate:360, 
-    scale:0, 
+gsap.to("#page1 h1", {
+    transform:'translate(-50%)', 
+    scrollTrigger:{
+        trigger:"#page1", 
+        scroller:'body', 
+        start:'top 0%',
+        end:"top -100%", 
+        scrub:1,
+        pin:true
+        
+
+    }
 })
 gsap.to("#page2 h1", {
-    transform:"translate(-75%)",
+    transform:"translate(-70%)",
     scrollTrigger:{
-        trigger:'#page2',
+        trigger:'#page2',// when we use the pin prop then we trigger ony the parents 
         scroller:'body', 
-        markers:true, 
         start:'top 0%' ,
         end:'top -100%',
         scrub:1,
@@ -39,9 +46,15 @@ gsap.to("#page2 h1", {
 
     }
 })
-gsap.from("#page3 #box", {
-    duration:2,
-    rotate:930, 
-    scale:0, 
-    scrollTrigger:"#page3 #box"
+gsap.to("#page3 h1", {
+    transform:"translate(-70%)",
+    scrollTrigger:{
+        trigger:'#page3',// when we use the pin prop then we trigger ony the parents 
+        scroller:'body', 
+        start:'top 0%' ,
+        end:'top -100%',
+        scrub:1,
+        pin:true 
+
+    }
 })
