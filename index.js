@@ -61,21 +61,21 @@ gsap.to("#page3 h1", {
 
 // Gsap svg manipulation
 
-var path = `M 0 150 Q 0 150 1400 150`
-var finalPath = `M 0 150 Q 0 150 1400 150`
+var path = `M 50 250 Q 750 250 1450 250`
+var finalPath = `M 50 250 Q 750 250 1450 250`
 
 let string = document.querySelector("#string")
 
-string.addEventListener("mousemove",(dets)=>{
-    path = `M 0 150 Q ${dets.x} ${dets.y} 1400 150`
+string.addEventListener("mousemove",function(dets){
+    path = `M 50 250 Q ${dets.x} ${dets.y} 1450 250`
     gsap.to("svg path", {
         attr:{d:path}, 
         duration:0.3, 
-        ease:'power3.out'
+        ease:'power4.out'
 
     })
 })
-string.addEventListener("mouseleave",()=>{
+string.addEventListener("mouseleave",function(){
     gsap.to("svg path", {
         attr:{d:finalPath}, 
         duration:1.5, 
