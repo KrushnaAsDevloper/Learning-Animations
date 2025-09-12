@@ -6,8 +6,14 @@ body{
 }
 
  @font-face {
-    font-family: newone;
+    font-family: font1;
     src: url('./RubikMonoOne-Regular.ttf');
+
+ }
+ @font-face {
+    font-family: font2;
+    src: url('./YsabeauOffice-VariableFont_wght.ttf');
+
  }
 
 @layer{
