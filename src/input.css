@@ -15,6 +15,14 @@ body{
     src: url('./YsabeauOffice-VariableFont_wght.ttf');
 
  }
+ @font-face {
+  font-family: font3;
+  src: url('/src/static/Bitcount_Grid_Double/BitcountGridDouble-VariableFont_CRSV\,ELSH\,ELXP\,slnt\,wght.ttf');
+ }
+ @font-face {
+  font-family: font4;
+  src: url('/src/static/Bricolage_Grotesque/BricolageGrotesque-VariableFont_opsz\,wdth\,wght.ttf');
+ }
 
 @layer{
     .text-stroke-1 {

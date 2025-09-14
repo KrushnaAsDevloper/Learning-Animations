@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-50: oklch(97.1% 0.013 17.38);
     --color-amber-400: oklch(82.8% 0.189 84.429);
     --color-yellow-400: oklch(85.2% 0.199 91.936);
     --color-yellow-500: oklch(79.5% 0.184 86.047);
@@ -27,6 +28,8 @@
     --text-5xl--line-height: 1;
     --text-6xl: 3.75rem;
     --text-6xl--line-height: 1;
+    --text-9xl: 8rem;
+    --text-9xl--line-height: 1;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --font-weight-extrabold: 800;
@@ -209,14 +212,8 @@
   .top-20 {
     top: calc(var(--spacing) * 20);
   }
-  .-right-5 {
-    right: calc(var(--spacing) * -5);
-  }
   .-right-150 {
     right: calc(var(--spacing) * -150);
-  }
-  .right-0 {
-    right: calc(var(--spacing) * 0);
   }
   .right-4 {
     right: calc(var(--spacing) * 4);
@@ -242,8 +239,8 @@
   .flex {
     display: flex;
   }
-  .hidden {
-    display: none;
+  .inline-block {
+    display: inline-block;
   }
   .table {
     display: table;
@@ -312,6 +309,9 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .bg-\[\#222\] {
+    background-color: #222;
+  }
   .bg-\[\#333\] {
     background-color: #333;
   }
@@ -363,11 +363,11 @@
   .text-center {
     text-align: center;
   }
-  .font-\[font1\] {
-    font-family: font1;
-  }
   .font-\[font2\] {
     font-family: font2;
+  }
+  .font-\[font4\] {
+    font-family: font4;
   }
   .font-\[newone\] {
     font-family: newone;
@@ -402,6 +402,12 @@
   .text-\[5vw\] {
     font-size: 5vw;
   }
+  .text-\[10vw\] {
+    font-size: 10vw;
+  }
+  .text-\[20vw\] {
+    font-size: 20vw;
+  }
   .text-\[50vw\] {
     font-size: 50vw;
   }
@@ -428,12 +434,6 @@
   }
   .text-\[\#a52a2ac4\] {
     color: #a52a2ac4;
-  }
-  .text-\[font1\] {
-    color: font1;
-  }
-  .text-\[newone-1\] {
-    color: newone-1;
   }
   .text-transparent {
     color: transparent;
@@ -477,6 +477,14 @@ body {
 @font-face {
   font-family: font2;
   src: url('./YsabeauOffice-VariableFont_wght.ttf');
+}
+@font-face {
+  font-family: font3;
+  src: url('/src/static/Bitcount_Grid_Double/BitcountGridDouble-VariableFont_CRSV\,ELSH\,ELXP\,slnt\,wght.ttf');
+}
+@font-face {
+  font-family: font4;
+  src: url('/src/static/Bricolage_Grotesque/BricolageGrotesque-VariableFont_opsz\,wdth\,wght.ttf');
 }
 @layer {
   .text-stroke-1 {
