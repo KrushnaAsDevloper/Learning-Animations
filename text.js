@@ -15,6 +15,7 @@ splittedText.forEach(function (elem, idx) {
     }
 })
  h1.innerHTML  = clutter
+ h1.style.color = "#7cfc00"
 
 
 }

@@ -2,6 +2,7 @@
 
 body{
     color: #a52a2a7a;
+    color:#7efc00d0;
     /* color: #ffffff7c; */
 }
 
@@ -18,6 +19,10 @@ body{
  @font-face {
   font-family: font3;
   src: url('/src/static/Bitcount_Grid_Double/BitcountGridDouble-VariableFont_CRSV\,ELSH\,ELXP\,slnt\,wght.ttf');
+ }
+ @font-face {
+  font-family: font5;
+  src: url('/src/static/3856NeueMachina.woff2');
  }
  @font-face {
   font-family: font4;
