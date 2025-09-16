@@ -28,6 +28,10 @@ body{
   font-family: font4;
   src: url('/src/static/Bricolage_Grotesque/BricolageGrotesque-VariableFont_opsz\,wdth\,wght.ttf');
  }
+ @font-face {
+  font-family: font5;
+  src: url('./Exo2-VariableFont_wght.ttf');
+ }
 
 @layer{
     .text-stroke-1 {
